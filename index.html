@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디아블록</title>
+  
+  <!-- 파비콘 설정 -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body, #root {
+      height: 100%;
+      overflow: hidden; /* Prevent body scrollbars, manage scrolling within components */
+    }
+    body {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; /* 한국어 지원 글꼴 스택 */
+      background-color: #1a202c; /* Tailwind's gray-900 */
+      color: #e2e8f0; /* Tailwind's gray-300 */
+    }
+    .diablo-red { color: #e53e3e; } /* Tailwind's red-600 */
+    .diablo-gold { color: #ecc94b; } /* Tailwind's yellow-400 */
+    .diablo-blue { color: #4299e1; } /* Tailwind's blue-500 */
+    .diablo-green { color: #48bb78; } /* Tailwind's green-500 */
+
+    /* Custom scrollbar for a more thematic feel */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #2d3748; /* gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4a5568; /* gray-600 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #718096; /* gray-500 */
+    }
+    .pixelated {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+    }
+    .text-shadow-diablo {
+      text-shadow: 1px 1px 2px black, 0 0 1em #e53e3e, 0 0 0.2em #e53e3e;
+    }
+     .text-shadow-sm-dark {
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "three": "https://esm.sh/three@0.166.1",
+    "three/addons/controls/OrbitControls.js": "https://esm.sh/three@0.166.1/examples/jsm/controls/OrbitControls.js",
+    "three/": "https://esm.sh/three@0.166.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <noscript>이 앱을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
