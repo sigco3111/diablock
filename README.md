@@ -2,7 +2,10 @@
 
 **디아블록**은 디아블로 시리즈에서 영감을 받아 제작된 3D 블록 스타일의 자동 전투 디펜스 게임입니다. 플레이어는 끊임없이 몰려오는 몬스터 무리를 상대하고, 강력한 아이템을 파밍하며 캐릭터를 성장시켜 점점 더 어려워지는 도전에 맞서게 됩니다.
 
-실행 주소 : https://dev-canvas-pi.vercel.app/
+
+[![Live](https://img.shields.io/badge/Live-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://sigco3111.github.io/diablock/)
+
+> **호스팅 이력**: 본 프로젝트는 Vercel에서 운영되었으나 2026-08에 GitHub Pages로 전환했습니다. 공식 라이브 데모는 위 Pages URL입니다.
 
 ## 목차
 
